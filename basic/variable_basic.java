@@ -3,7 +3,6 @@ public class variable_basic{
         int x=2;
         System.out.println(x+2);
         x=7;
-        System.out.print(x); //4
-//7
+        System.out.print(x);
     }
 }
