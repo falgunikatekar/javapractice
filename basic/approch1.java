@@ -1,5 +1,6 @@
 import java.util.Scanner;
 public class approch1 {
+//nesting
 
     public static void main(String[] args) {
         //there is n+1 size array and 1to n no in array one no is extra find extra
