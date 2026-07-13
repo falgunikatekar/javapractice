@@ -7,7 +7,7 @@ public class classc {
         int rollno;
         double cgpa;
         public void print(){
-        System.out.println("name"+name +"rollno"+rollno+"cgpa"+cgpa);
+        System.out.println("name "+name +"rollno"+rollno+"cgpa"+cgpa);
     }
     }
     
