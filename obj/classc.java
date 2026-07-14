@@ -1,4 +1,4 @@
-package objectoritented;
+package obj;
 import java.util.Scanner;
 public class classc {
     
