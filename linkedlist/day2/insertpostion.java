@@ -56,6 +56,43 @@ class linkedlist {
         }
         System.out.println();
     }
+    public static node deletepos(node head, int pos) {
+
+    if (head == null) {
+        System.out.println("List is empty");
+        return head;
+    }
+
+    if (pos < 0) {
+        System.out.println("Invalid Position");
+        return head;
+    }
+
+    // Delete first node
+    if (pos == 0) {
+        return head.next;
+    }
+
+    node temp = head;
+
+    // Move to the node before the position
+    for (int i = 0; i < pos - 1; i++) {
+        if (temp == null || temp.next == null) {
+            System.out.println("Invalid Position");
+            return head;
+        }
+        temp = temp.next;
+    }
+
+    if (temp.next == null) {
+        System.out.println("Invalid Position");
+        return head;
+    }
+
+    temp.next = temp.next.next;
+
+    return head;
+}
 }
 
 public class insertpostion {
@@ -78,5 +115,8 @@ public class insertpostion {
 
         System.out.println("After Insertion:");
         linkedlist.displaylist(head);
+
+        head = deletepos(head, 2);
+    
     }
 }

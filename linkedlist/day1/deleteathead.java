@@ -16,7 +16,6 @@ class linkedlist {
             System.out.println("List is empty");
             return null;
         }
-
         return head.next;
     }
 
