@@ -7,6 +7,17 @@ class node{
         this.data=data;
     }
 }
+class linkedlist {
+
+    public static node deletehead(node head) {
+        if (head == null) {
+            System.out.println("List is empty");
+            return null;
+        }
+
+        return head.next;
+    }
+
 public class nodeoflinkedlist {
     public static void main(String[] args) {
         node a=new node(10);
