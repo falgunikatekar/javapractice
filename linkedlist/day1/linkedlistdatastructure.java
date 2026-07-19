@@ -6,6 +6,11 @@ class node{
         this.data=data;
     }
 }
+class linkedlist{
+    node head;
+    node tail;
+    
+}
 public class linkedlistdatastructure {
     public static void main(String[] args) {
         node a=new node(2);
